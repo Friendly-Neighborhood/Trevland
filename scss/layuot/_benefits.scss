@@ -1,0 +1,61 @@
+.benefits {
+    @include section (0, 140px);
+
+    &__title {
+        color: white;
+       
+    }
+
+    &__desc {
+        max-width: 581px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    &__list{
+        display: flex;
+        gap: 32px;
+        }
+
+    &__right-side{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }    
+
+    &__item{
+        display: flex;
+        gap: 27px;
+    }
+}
+    .benefits-card__subtitle {
+        font-family: $SecondaryFontFamily;
+        @include fonts (20px, 30px, 500, null);
+        color:white;
+        margin-bottom: 10px;
+     
+       }
+
+    .benefits-card__desc {
+       max-width: 243px;
+      @include fonts (18px, 29px, 400, null);
+      margin-bottom: 5px;
+         }
+
+
+   .card-desc{
+    max-width: 470px;
+    margin-bottom: 10px;
+   }
+    
+    .card-img {
+        margin-bottom: 35px;
+    }
+
+   .benefits-link{
+    color: $SecondaryTextColor;
+    @include fonts (20px, 30px, 400, null);
+   }
+
+

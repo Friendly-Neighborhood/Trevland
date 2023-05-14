@@ -1,0 +1,27 @@
+.hero{
+
+margin-left: auto;
+margin-right: auto;
+}
+
+.hero__container{
+    padding-top: 161px;
+    padding-bottom: 244px;
+    }
+
+
+.hero-title {
+    font-family: $SecondaryFontFamily;
+    color: $MainColor;
+    @include fonts(65px, 78px, 700, null);
+    max-width: 804px;
+    margin-bottom: 30px;
+   
+}
+
+.hero__desc{
+    @include fonts (18px, 29px);
+    color:$MainColor;
+    max-width: 458px;
+    margin-bottom: 40px;
+     }

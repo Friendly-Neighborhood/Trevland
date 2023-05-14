@@ -1,0 +1,12 @@
+.nav__list{
+    display: flex;
+    gap: 50px;
+    }
+
+.nav__link{
+    display: inline-flex;
+    color: $MainColor;
+    @include fonts (18px, 27px, 500);
+    padding-top: 47px;
+    padding-bottom: 47px;
+}

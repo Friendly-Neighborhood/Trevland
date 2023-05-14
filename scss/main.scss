@@ -1,0 +1,26 @@
+// utils styles
+@import'./utils/variables';
+@import'./utils/decimals';
+@import'./utils/mixins';
+@import'./utils/placeholders';
+
+// base styles
+@import'./base/base';
+@import'./base/reset';
+
+
+// components styles
+@import'./components/container';
+@import'./components/logo';
+@import'./components/buttons';
+@import'./components/form-subscription';
+
+
+//layout
+@import'./layuot/header';
+@import'./layuot/nav';
+@import'./layuot/hero';
+@import'./layuot/location';
+@import'./layuot/offers';
+@import'./layuot/benefits';
+@import'./layuot/footer';

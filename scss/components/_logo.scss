@@ -1,0 +1,19 @@
+.logo{
+font-family: $LogoFonts;
+color: $MainColor;
+padding-top: 42px;
+padding-bottom: 47px;
+
+@include fonts (24px, 36px, 400, 0.06em);
+}
+
+.header__logo {
+    margin-right: 211px;
+}
+
+.footer__logo{
+    padding: 0;
+    display: inline-flex;
+    color: $SecondaryTextColor;
+    margin-bottom: 40px;
+}

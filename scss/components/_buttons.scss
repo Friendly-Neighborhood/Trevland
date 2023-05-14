@@ -1,0 +1,24 @@
+.btn{
+    display: block;
+    min-width: 163px;
+    height: 51px;
+    border-radius: 5px;
+    background-color: $AccentColor;
+    @include fonts (16px, 24px);
+    color: $MainColor;
+    padding-top: 14px;
+    padding-right: 34px;
+    padding-bottom: 13px;
+    padding-left: 36px;
+    margin-left: auto;
+    border: none;
+    cursor: pointer;
+    }
+
+    .hero-btn {
+        margin-left: 0;
+            }
+    
+    .btn-link{
+        color: $MainColor;
+    }        

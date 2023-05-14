@@ -1,0 +1,49 @@
+.location{
+    @include section (140px, 140px);
+
+  &__title {
+    color: white;
+            @extend %section-title;
+        }
+
+  &__desc {
+    color: white;
+    max-width: 735px;
+    margin-left: auto;
+    margin-right: auto;
+    @extend %section-desc;
+  }  
+  
+  &__list {
+    display: flex;
+    gap: 31px;
+      }
+
+   
+  &__wrapper{
+    background-color: aqua;
+    padding-top: 35px;
+    padding-right: 34px;
+    padding-bottom: 33px;
+    padding-left: 37px;
+    border: 1px solid $MainBorderColor;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    box-shadow: $Shadow;
+  }
+
+  &__subtitle{
+    color: white;
+    text-align: center;
+    font-family: $SecondaryFontFamily;
+    @include fonts (24px, 36px, 500);
+    margin-bottom: 10px;
+  }
+}
+
+  .wrapper-desc {
+    color: white;
+    text-align: center;
+      }
+
+

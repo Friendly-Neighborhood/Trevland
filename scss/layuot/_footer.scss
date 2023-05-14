@@ -1,0 +1,76 @@
+.footer{
+background-color: $FooterBGColor ;
+
+&__container{
+    display: flex;
+    padding-top: 70px;
+    padding-bottom: 78px;}
+    
+
+&__contacts{
+    margin-right: 107px;
+}
+
+&__subtitle {
+    @include fonts (16px, 26px, 400, 0.06em);
+    color: $SecondaryTextColor;
+    margin-bottom: 10px;
+}
+
+&__link{
+    display: inline-flex;
+    @include fonts (16px, 26px, 400, 0.06em);
+    color: $SecondaryTextColor;
+    margin-bottom: 20px;
+}
+}
+
+.socials-list{
+    display: flex;
+    gap: 27px;
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.socials-item{
+    cursor: pointer;
+}
+
+.socials-icon{
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    }
+
+ .footer-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 121px;
+   
+ }   
+
+ .footer-nav__link{
+    color: $SecondaryTextColor;
+    @include fonts (16px, 24px, 500, null);
+ }
+
+ .footer-policy{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 133px;
+ }
+
+ .footer-policy__link{
+    color: $SecondaryTextColor;
+     @include fonts (16px, 24px, 500, null);
+    
+ }
+
+ .footer-subtitle{
+    display: inline-flex;
+    @include fonts (20px, 30px, 500, 0.06);
+    color: $SecondaryTextColor;
+    margin-bottom: 42px;
+ }
