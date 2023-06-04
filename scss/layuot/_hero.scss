@@ -5,17 +5,42 @@ margin-right: auto;
 }
 
 .hero__container{
-    padding-top: 161px;
-    padding-bottom: 244px;
+     padding-top: 50px;
+    padding-bottom: 100px;
+    @media screen and (min-width: 768px) {
+        padding-top: 80px;
+            padding-bottom: 144px;
+        }
+
+                 @media screen and (min-width: 1200px) {
+                    padding-top: 100px;
+                        padding-bottom: 144px;
+                 }
+    
     }
 
 
 .hero-title {
     font-family: $SecondaryFontFamily;
     color: $MainColor;
-    @include fonts(65px, 78px, 700, null);
-    max-width: 804px;
+    @include fonts(35px, 48px, 700, null);
+    max-width: 420px;
     margin-bottom: 30px;
+
+       
+        @media screen and (min-width: 768px) {
+            @include fonts(45px, 58px, 700, null);
+                max-width: 768px;
+                margin-bottom: 30px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            @include fonts(65px, 78px, 700, null);
+                max-width: 804px;
+                margin-bottom: 30px;
+        }
+
+   
    
 }
 

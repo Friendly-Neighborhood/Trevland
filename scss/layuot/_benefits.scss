@@ -1,8 +1,14 @@
 .benefits {
-    @include section (0, 140px);
+@include section (0, 30px);
+
+    @media screen and (min-width: 768px) {
+            @include section (0, 140px);
+        }
+   
 
     &__title {
         color: white;
+        @extend %section-title;
        
     }
 
@@ -10,12 +16,21 @@
         max-width: 581px;
         margin-left: auto;
         margin-right: auto;
+        @extend %section-desc;
         
     }
 
     &__list{
-        display: flex;
-        gap: 32px;
+display: flex;
+flex-direction: column;
+    gap: 10px;
+
+        @media screen and (min-width: 1200px) {
+                display: flex;
+                flex-direction: row;
+                    gap: 32px;
+            }
+        
         }
 
     &__right-side{
@@ -25,8 +40,18 @@
     }    
 
     &__item{
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     margin-left: auto;
+     margin-right: auto;
+
+@media screen and (min-width: 768px) {
         display: flex;
+        flex-direction: row;
         gap: 27px;
+    }
+        
     }
 }
     .benefits-card__subtitle {
@@ -39,6 +64,7 @@
 
     .benefits-card__desc {
        max-width: 243px;
+       justify-content: center;
       @include fonts (18px, 29px, 400, null);
       margin-bottom: 5px;
          }
@@ -51,6 +77,12 @@
     
     .card-img {
         margin-bottom: 35px;
+        margin-left: 10px;
+        width: 263px;
+        
+@media screen and (min-width: 768px) {
+        width: 554px;}
+        
     }
 
    .benefits-link{

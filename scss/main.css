@@ -154,11 +154,11 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("/Trevland/images/hero@1x.jpg");
+  background-image: url("/Trevland/images/2560x1600-101317-plane-minimalism-colors-4k.jpg");
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header-hero {
-    background-image: url("/Trevland/images/hero@2x.jpg");
+    background-image: url("/Trevland/images/2560x1600-101317-plane-minimalism-colors-4k.jpg");
   }
 }
 

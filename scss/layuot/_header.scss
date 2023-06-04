@@ -1,10 +1,23 @@
 .header{
+    flex-wrap: nowrap;
     display: flex;
     align-items: center;
     
-}
+      
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+    
+        }
 
 .header-hero{
+    // @media all and (min-device-width: 320px) {
+    
+    //         img {
+    //             width: 100px;
+    //         }
+    
+    //     }
     background-color: $HeroBgColor;
     background-repeat: no-repeat;
         background-position: center;
