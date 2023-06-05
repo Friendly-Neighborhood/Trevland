@@ -1,0 +1,34 @@
+.header{
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    
+      
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+    
+        }
+
+.header-hero{
+    // @media all and (min-device-width: 320px) {
+    
+    //         img {
+    //             width: 100px;
+    //         }
+    
+    //     }
+    background-color: $HeroBgColor;
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url("images/hero@1x.jpg");
+         @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                url("images/hero@2x.jpg");
+
+        }
+        
+}

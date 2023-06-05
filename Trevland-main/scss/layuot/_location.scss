@@ -1,0 +1,93 @@
+.location{
+  @include section (30px, 30px);
+  
+    @media screen and (min-width: 768px) {
+      @include section (0px, 80px);
+    }
+    
+
+  &__title {
+    color: white;
+            @extend %section-title;
+        }
+
+  &__desc {
+    color: white;
+    max-width: 735px;
+    margin-left: auto;
+    margin-right: auto;
+    @extend %section-desc;
+  }  
+  
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    align-items: center;
+@media screen and (min-width: 768px) {
+    max-width: 768px;
+    flex-flow: wrap;
+    justify-content: space-around;
+   
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    flex-flow: nowrap;
+    justify-content: normal;
+  }
+    
+      }
+
+   
+  &__wrapper{
+    background-color: inherit;
+    padding-top: 35px;
+    padding-right: 34px;
+    padding-bottom: 33px;
+    padding-left: 37px;
+    border: 1px solid whitesmoke;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    box-shadow: $Shadow;
+    width: 290px;
+    @media screen and (min-width: 360px) {
+      width: 290px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 360px;
+      }
+    
+        }
+
+  &__subtitle{
+    color: white;
+    text-align: center;
+    font-family: $SecondaryFontFamily;
+    @include fonts (24px, 36px, 500);
+    margin-bottom: 10px;
+  }
+}
+
+  .wrapper-desc {
+    color: white;
+    text-align: center;
+      }
+
+ .locatin__img{
+  border: 1px solid whitesmoke;
+  border-bottom: none;
+  width: 290px;
+  @media screen and (min-width: 480px) {
+      width: 290px;
+        height: 271px;
+    }
+  
+    @media screen and (min-width: 768px) {
+        width: 360px;
+        height: 331px;
+    }
+  
+     }
+

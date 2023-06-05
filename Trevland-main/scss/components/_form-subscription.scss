@@ -1,0 +1,29 @@
+.form-subscription__input{
+    width: 195px;
+    height: 44px;
+    border: 1px solid $MainBorderColor;
+    border-radius: 5px;
+    background-color: inherit;
+    margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0px;
+        }
+    
+
+   &::placeholder{
+    color: $SecondaryTextColor;
+    @include fonts (16px, 24px, 400, 00.06em);
+}
+}
+
+.subscription__btn{
+    width: 103px;
+    height: 44px;
+    background-color: $AccentColor;
+    border: none;
+    @include fonts (16px, 24px, 400, 00.06em);
+    color: $MainColor;
+    border-radius: 5px;
+    
+
+}
